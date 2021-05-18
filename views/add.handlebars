@@ -1,0 +1,31 @@
+<form action="/add" method="POST">
+    <div class="field">
+        <label class="label">Blog Title</label>
+        <div class="control">
+            <input class="input" name="title" type="text" placeholder="Blog Title">
+        </div>
+    </div>
+
+    <div class="field">
+        <label class="label">Blog Author</label>
+        <div class="control">
+            <input class="input is-success" name="writer" type="text" placeholder="Blog Author" value="">
+        </div>
+    </div>
+
+
+    <div class="field">
+        <label class="label">Blog Post</label>
+        <div class="control">
+            <textarea class="textarea" name="body" placeholder="Blog Post goes here..."></textarea>
+        </div>
+    </div>
+
+    
+
+    <div class="field is-grouped">
+        <div class="control">
+            <input type="submit" value="Create Blog" class="button is-link"></input>
+        </div>
+    </div>
+</form>

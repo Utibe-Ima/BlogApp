@@ -1,0 +1,34 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.landing-section {
+    background-image: url('../img/james-kovin-F2h_WbKnX4o-unsplash.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.search-section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#search-bar{
+    width: 30rem;
+    height: 2.5rem;
+    border-radius: 0px;
+    border: none;
+}
+
+
+#search-btn {
+    height: 2.5rem;
+    border-radius: 0px;
+    border: none;
+    cursor: pointer;
+    width: 5rem;
+}
