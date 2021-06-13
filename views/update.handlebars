@@ -1,4 +1,25 @@
 <h1>Update Blog</h1>
-{{!-- <form action="{{links.update}}?_method=PUT" method="post">
+<form action="/update/{{db.blog.id}}?_method=PUT" method="POST">
+    <div class="field">
+        <label class="label">Blog Title</label>
+        <div class="control">
+            <input class="input" name="title" type="text" value="{{update.title}}" placeholder="Blog Title">
+        </div>
+    </div>
+
+    <div class="field">
+        <label class="label">Blog Author</label>
+        <div class="control">
+            <input class="input is-success" name="writer" type="text" placeholder="Blog Author" value="{{update.writer}}">
+        </div>
+    </div>
+
+
+    <div class="field">
+        <label class="label">Blog Post</label>
+        <div class="control">
+            <textarea class="textarea" name="body" placeholder="Blog Post goes here...">{{update.body}}</textarea>
+        </div>
+    </div>
     <input type="submit" value="Update Blog Post">
-</form> --}}
+</form>

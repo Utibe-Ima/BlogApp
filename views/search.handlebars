@@ -1,0 +1,20 @@
+<section class="blogs-section">
+    <h2>Search Results</h2>
+
+    {{#each searchResult}}
+    <div class="blog">
+        <h3>{{title}}</h3>
+        <p>
+            {{body}}
+        </p>
+        <address>{{writer}}</address>
+    </div>
+
+    <div class="format">
+        <a href="{{links.show}}">Read more</a>
+    </div>
+    {{else}}
+    <p>No Blog Post Found</p>
+    {{/each}}
+
+</section>

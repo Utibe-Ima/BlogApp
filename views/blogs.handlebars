@@ -14,10 +14,11 @@
         <form action="{{links.remove}}?_method=DELETE" method="POST">
             <input type="submit" value="Delete Blog Post">
         </form>
-        <form action="{{links.update}}?_method=PUT" method="POST">
+        <a href="{{links.update}}">Update Blog Post</a>
+        {{!-- <form action="{{links.update}}?_method=PUT" method="POST">
             <input type="submit" value="Update Blog Post">
-        </form>
-        <a href="/blog/{{id}}">Read more</a>
+        </form> --}}
+        <a href="{{links.show}}">Read more</a>
     </div>
     {{else}}
     <p>No Blog Post Available</p>

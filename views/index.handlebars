@@ -1,10 +1,18 @@
-  
-    <section class="landing-section">
-        <div class="search-section">
-            <h3>Search for a Blog Post</h3>
-            <form action="" method="get">
-                <input type="search" name="search" id="search-bar" required>
-                <input type="submit" value="Search" id="search-btn">
-            </form>
-        </div>
-    </section>
+<section class="landing-section">
+    <div class="search-section">
+        <h3>Search for a Blog Post Using a Keyword</h3>
+        <form action="/search" method="GET">
+            <div class="field">
+                <div class="control">
+                    <input class="input is-success" name="search" type="text" placeholder="Input a keyword, blog author or blog title" value="">
+                </div>
+            </div>
+
+            <div class="field is-grouped">
+                <div class="control">
+                    <input type="submit" value="Search" class="button is-link"></input>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

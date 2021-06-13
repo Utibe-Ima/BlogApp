@@ -1,14 +1,15 @@
 <div class="blog">
-        <h3>{{title}}</h3>
-        <p>
-            {{body}}
-        </p>
-        <address>{{writer}}</address>
-    </div>
 
-    <form action="{{links.remove}}?_method=DELETE" method="POST">
-        <input type="submit" value="Delete Blog Post">
+        <h3>{{show.title}}</h3>
+        <p>
+            {{show.body}}
+        </p>
+        <address>{{show.writer}}</address>
+</div>
+<div class="format-section">
+    <a href="/all">Back</a>
+    <form action="/remove/{{id}}?_method=DELETE" method="POST">
+        <input type="submit" value="Delete Post">
     </form>
-     <form action="{{links.update}}?_method=PUT" method="POST">
-        <input type="submit" value="Update Blog Post">
-    </form>
+     <a href="/update/{{id}}/edit">Update Post</a>
+</div>
